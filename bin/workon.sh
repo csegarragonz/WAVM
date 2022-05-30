@@ -5,7 +5,7 @@
 # ----------------------------
 
 MODE="undetected"
-if [[ -z "$FAABRIC_DOCKER" ]]; then
+if [[ -z "$WAVM_DOCKER" ]]; then
 
     THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
     if [ "$(ps -o comm= -p $$)" = "zsh" ]; then

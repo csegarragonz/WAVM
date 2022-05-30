@@ -5,6 +5,7 @@ services:
     image: ${WAVM_CLI_IMAGE}
     volumes:
       - ./:/code
+      - /code/venv
     working_dir: /code
     stdin_open: true
     tty: true
